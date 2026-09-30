@@ -1,18 +1,12 @@
 <?xml version="1.0"?>
 <package format="3">
-  <name>hikrobot_camera</name>
-  <version>0.0.0</version>
-  <description>Training scaffold for a ROS 2 Humble camera SDK assignment.</description>
-  <!-- Replace placeholder maintainer and choose a license before publishing. -->
-  <maintainer email="student@example.com">Student Name</maintainer>
-  <license>TODO</license>
+  <name>hik_camera</name><version>0.1.0</version>
+  <description>USB Hikrobot camera driver with checked settings and reconnect for ROS 2 Humble.</description>
+  <maintainer email="2042443502@qq.com">openonelight</maintainer>
+  <license>MIT</license>
   <buildtool_depend>ament_cmake</buildtool_depend>
-  <depend>rclcpp</depend>
-  <exec_depend>launch</exec_depend>
-  <exec_depend>launch_ros</exec_depend>
-  <exec_depend>ament_index_python</exec_depend>
-  <!-- Add dependencies when your implementation uses them. -->
-  <export>
-    <build_type>ament_cmake</build_type>
-  </export>
+  <depend>rclcpp</depend><depend>rcl_interfaces</depend><depend>sensor_msgs</depend><depend>diagnostic_msgs</depend>
+  <exec_depend>launch</exec_depend><exec_depend>launch_ros</exec_depend>
+  <exec_depend>ament_index_python</exec_depend><exec_depend>rviz2</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
 </package>

@@ -1,0 +1,20 @@
+{
+  "images": {
+    "received": 48,
+    "valid": 48,
+    "width": 1440,
+    "height": 1080,
+    "encoding": "bgr8",
+    "sampled_mean": 50.13522089333659,
+    "frame_id": "camera_optical_frame"
+  },
+  "reject_negative_exposure": true,
+  "reject_invalid_format": true,
+  "valid_exposure_update": true,
+  "stream_after_parameters": true,
+  "restored_exposure": true,
+  "stream_stops_unplugged": true,
+  "offline_update_rejected": true,
+  "stream_recovers": true,
+  "parameters_preserved": true
+}

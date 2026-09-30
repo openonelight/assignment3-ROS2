@@ -4,7 +4,7 @@
 
 项目已完成从厂商 SDK 到 ROS 2 标准图像话题的封装，并在真实 USB 工业相机上验证了图像显示、曝光调节、参数异常处理和断线恢复。采用节点与设备访问层分离的结构，配套 Launch、YAML 参数、RViz 配置和自动测试，便于启动、复用与排查问题。
 
-**成果展示与验收证据见 [成果验收报告](src/hikrobot_camera/ACCEPTANCE.md)。** 本提交采用 2026-09-30 Ubuntu 实测版本。
+**成果展示与验收证据见 [成果验收报告](ACCEPTANCE.md)。** 本提交采用 2026-09-30 Ubuntu 实测版本。
 
 ## 环境
 
@@ -87,7 +87,7 @@ ros2 topic hz /image_raw
 
 | 项目 | 结论 | 证据 |
 |---|---|---|
-| Ubuntu 编译 | colcon build 成功，无编译错误 | [构建与测试日志](src/hikrobot_camera/evidence/build-20260930-214154.log) |
+| Ubuntu 编译 | colcon build 成功，无编译错误 | [构建与测试日志](evidence/build-20260930-214154.log) |
 | 模拟后端测试 | 1 项测试通过，0 失败；内部覆盖参数回退、连接与缓冲释放等分支 | 同一构建日志 |
 | 按序列号连接、ROS 图像发布 | 已运行；检查收到 1440×1080、bgr8 合法图像 | 随包 check JSON、运行日志 |
 | RViz 显示、曝光修改 | 有实际图像及 10000→20000 微秒设置成功截图 | evidence/ros_image_exposure.png |
@@ -95,7 +95,7 @@ ros2 topic hz /image_raw
 | 合法曝光更新及恢复 | 通过 | valid_exposure_update、restored_exposure 为 true |
 | 拔插恢复、离线修改拒绝 | 随包拔插检查通过 | 随包 check JSON、reconnect_check.jpg |
 | 重连配置恢复 | 运行日志记录重新应用曝光、增益 0、帧率及 BayerRG8 | 随包 21:44 运行日志 |
-| 帧率设置 | 30/60 fps 配置已有运行记录；一次诊断发布值约 59.99 fps | [60 fps 诊断截图](src/hikrobot_camera/evidence/diagnostics_60fps.png)；持续性能见下文 |
+| 帧率设置 | 30/60 fps 配置已有运行记录；一次诊断发布值约 59.99 fps | [60 fps 诊断截图](evidence/diagnostics_60fps.png)；持续性能见下文 |
 | 参数接口覆盖 | 已实现曝光、增益、帧率、像素格式四类接口，包含校验、读回及回退 | `camera.hpp`、`camera_node.cpp`；实测范围见下文 |
 
 ## 测试范围与后续完善

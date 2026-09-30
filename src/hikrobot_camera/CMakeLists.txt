@@ -1,25 +1,31 @@
-cmake_minimum_required(VERSION 3.8)
-project(hikrobot_camera)
-
+cmake_minimum_required(VERSION 3.16)
+project(hik_camera)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-
-add_executable(camera_node
-  src/main.cpp
-  src/camera_node.cpp
-)
-target_compile_features(camera_node PRIVATE cxx_std_17)
+find_package(rcl_interfaces REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(diagnostic_msgs REQUIRED)
+set(MVS_ROOT "/opt/MVS" CACHE PATH "Hikrobot MVS SDK installation")
+find_path(MVS_INCLUDE MvCameraControl.h PATHS "${MVS_ROOT}/include" NO_DEFAULT_PATH REQUIRED)
+find_library(MVS_LIBRARY NAMES MvCameraControl libMvCameraControl.so.4.8.2.1
+  PATHS "${MVS_ROOT}/lib/64" "${MVS_ROOT}/lib/aarch64" NO_DEFAULT_PATH REQUIRED)
+get_filename_component(MVS_LIB_DIR "${MVS_LIBRARY}" DIRECTORY)
+add_executable(camera_node src/camera_node.cpp)
 target_include_directories(camera_node PRIVATE include)
-ament_target_dependencies(camera_node rclcpp)
-
-if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
-  target_compile_options(camera_node PRIVATE -Wall -Wextra -Wpedantic)
-endif()
-
-# TODO(student): Declare and link the dependencies used by your implementation,
-# including the vendor SDK. The starter does not discover or link MVS.
-
+target_include_directories(camera_node SYSTEM PRIVATE "${MVS_INCLUDE}")
+target_link_libraries(camera_node "${MVS_LIBRARY}")
+ament_target_dependencies(camera_node rclcpp rcl_interfaces sensor_msgs diagnostic_msgs)
+target_compile_options(camera_node PRIVATE -Wall -Wextra -Wpedantic)
+set_target_properties(camera_node PROPERTIES BUILD_RPATH "${MVS_LIB_DIR}" INSTALL_RPATH "${MVS_LIB_DIR}")
 install(TARGETS camera_node DESTINATION lib/${PROJECT_NAME})
-install(DIRECTORY launch config DESTINATION share/${PROJECT_NAME})
-
+install(DIRECTORY launch config rviz DESTINATION share/${PROJECT_NAME})
+if(BUILD_TESTING)
+  enable_testing()
+  add_executable(backend_test test/backend_test.cpp)
+  target_include_directories(backend_test PRIVATE include)
+  target_include_directories(backend_test SYSTEM PRIVATE "${MVS_INCLUDE}")
+  add_test(NAME backend_transaction_test COMMAND backend_test)
+endif()
 ament_package()

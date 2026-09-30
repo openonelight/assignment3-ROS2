@@ -1,0 +1,91 @@
+[INFO] [launch]: All log files can be found below /home/zym/.ros/log/2026-09-30-21-44-49-565182-zym-TX-Gaming-FX608LM-FX608LM-11543
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [camera_node-1]: process started with pid [11546]
+[INFO] [rviz2-2]: process started with pid [11548]
+[rviz2-2] [INFO] [1790775889.741172016] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-2] [INFO] [1790775889.741214749] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[rviz2-2] [INFO] [1790775889.768710796] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-2] [INFO] [1790775889.869659625] [rviz2]: Stereo is NOT SUPPORTED
+[camera_node-1] [INFO] [1790775889.903117839] [hik_camera]: Connected USB serial=00F78118392; ExposureTime=20000 range=[15,9.99972e+06] Gain=0 range=[0,17.0166] AcquisitionFrameRate=30 range=[0.1,100000] PixelFormat=BayerRG8 supported=Mono8,Mono10,Mono12,RGB8Packed,BGR8Packed,YUV422_YUYV_Packed,YUV422Packed,BayerRG8,BayerRG10,BayerRG10Packed,BayerRG12,BayerRG12Packed,
+[camera_node-1] [INFO] [1790775890.630334209] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=30.16 total=22
+[camera_node-1] [INFO] [1790775895.633648721] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=29.90 total=172
+[camera_node-1] [INFO] [1790775900.633686925] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=29.91 total=322
+[camera_node-1] [INFO] [1790775906.629972861] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=30.03 total=502
+[camera_node-1] [INFO] [1790775910.080713479] [hik_camera]: Accepted configuration; readbacks will appear in diagnostics
+[camera_node-1] [INFO] [1790775912.340343112] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=15.83 total=637
+[camera_node-1] [INFO] [1790775913.204592443] [hik_camera]: Accepted configuration; readbacks will appear in diagnostics
+[camera_node-1] [INFO] [1790775917.633329740] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=30.14 total=785
+[camera_node-1] [INFO] [1790775922.634521773] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=30.18 total=928
+[camera_node-1] [INFO] [1790775928.634692121] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=29.98 total=1108
+[camera_node-1] [INFO] [1790775933.637381733] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=29.99 total=1258
+[camera_node-1] [INFO] [1790775939.634871105] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=30.01 total=1438
+[camera_node-1] [INFO] [1790775945.634955989] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=29.97 total=1600
+[camera_node-1] [INFO] [1790775952.672465757] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=5.95 total=1714
+[camera_node-1] [INFO] [1790775958.384603214] [hik_camera]: Accepted configuration; readbacks will appear in diagnostics
+[camera_node-1] [INFO] [1790775958.638246630] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=27.89 total=1855
+[camera_node-1] [INFO] [1790775961.871740383] [hik_camera]: Accepted configuration; readbacks will appear in diagnostics
+[camera_node-1] [INFO] [1790775964.640130295] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=29.81 total=2035
+[camera_node-1] [INFO] [1790775970.635510097] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=29.96 total=2194
+[camera_node-1] [ERROR] [1790775971.532432057] [hik_camera]: Device disconnected; reconnect will restore last accepted settings
+[camera_node-1] [WARN] [1790775973.533278002] [hik_camera]: USB camera serial 00F78118392 not found; close MVS and check cable/permissions; retry in 2s
+[camera_node-1] [WARN] [1790775975.533493321] [hik_camera]: USB camera serial 00F78118392 not found; close MVS and check cable/permissions; retry in 2s
+[camera_node-1] [INFO] [1790775976.611168821] [hik_camera]: connected=0 requested_fps=30.00 publish_fps=0.00 total=2219
+[camera_node-1] [WARN] [1790775977.534493778] [hik_camera]: USB camera serial 00F78118392 not found; close MVS and check cable/permissions; retry in 2s
+[camera_node-1] [WARN] [1790775979.534401548] [hik_camera]: USB camera serial 00F78118392 not found; close MVS and check cable/permissions; retry in 2s
+[camera_node-1] [WARN] [1790775981.534524143] [hik_camera]: USB camera serial 00F78118392 not found; close MVS and check cable/permissions; retry in 2s
+[camera_node-1] [INFO] [1790775981.611370877] [hik_camera]: connected=0 requested_fps=30.00 publish_fps=0.00 total=2219
+[camera_node-1] [WARN] [1790775983.534718570] [hik_camera]: USB camera serial 00F78118392 not found; close MVS and check cable/permissions; retry in 2s
+[camera_node-1] [WARN] [1790775985.535534153] [hik_camera]: USB camera serial 00F78118392 not found; close MVS and check cable/permissions; retry in 2s
+[camera_node-1] [INFO] [1790775986.611453628] [hik_camera]: connected=0 requested_fps=30.00 publish_fps=0.00 total=2219
+[camera_node-1] [WARN] [1790775987.535734710] [hik_camera]: USB camera serial 00F78118392 not found; close MVS and check cable/permissions; retry in 2s
+[camera_node-1] [WARN] [1790775989.536686962] [hik_camera]: USB camera serial 00F78118392 not found; close MVS and check cable/permissions; retry in 2s
+[camera_node-1] [WARN] [1790775991.536776509] [hik_camera]: USB camera serial 00F78118392 not found; close MVS and check cable/permissions; retry in 2s
+[camera_node-1] [INFO] [1790775991.611538832] [hik_camera]: connected=0 requested_fps=30.00 publish_fps=0.00 total=2219
+[camera_node-1] [WARN] [1790775993.537597337] [hik_camera]: USB camera serial 00F78118392 not found; close MVS and check cable/permissions; retry in 2s
+[camera_node-1] [WARN] [1790775995.537839743] [hik_camera]: USB camera serial 00F78118392 not found; close MVS and check cable/permissions; retry in 2s
+[camera_node-1] [WARN] [1790775997.537667342] [hik_camera]: USB camera serial 00F78118392 not found; close MVS and check cable/permissions; retry in 2s
+[camera_node-1] [INFO] [1790775997.611530920] [hik_camera]: connected=0 requested_fps=30.00 publish_fps=0.00 total=2219
+[camera_node-1] [WARN] [1790775999.537767514] [hik_camera]: USB camera serial 00F78118392 not found; close MVS and check cable/permissions; retry in 2s
+[camera_node-1] [INFO] [1790776001.819779937] [hik_camera]: Connected USB serial=00F78118392; ExposureTime=20000 range=[15,9.99972e+06] Gain=0 range=[0,17.0166] AcquisitionFrameRate=30 range=[0.1,100000] PixelFormat=BayerRG8 supported=Mono8,Mono10,Mono12,RGB8Packed,BGR8Packed,YUV422_YUYV_Packed,YUV422Packed,BayerRG8,BayerRG10,BayerRG10Packed,BayerRG12,BayerRG12Packed,
+[camera_node-1] [INFO] [1790776002.682706073] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=22.57 total=2238
+[camera_node-1] [INFO] [1790776008.636444167] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=30.00 total=2415
+[camera_node-1] [INFO] [1790776014.639390822] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=29.90 total=2595
+[camera_node-1] sequence size exceeds remaining buffer
+[camera_node-1] [INFO] [1790776020.633563488] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=30.08 total=2775
+[rviz2-2] sequence size exceeds remaining buffer
+[camera_node-1] [INFO] [1790776024.603770355] [hik_camera]: Accepted configuration; readbacks will appear in diagnostics
+[camera_node-1] [INFO] [1790776026.633259506] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=30.00 total=2955
+[camera_node-1] [INFO] [1790776031.634924250] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=29.93 total=3105
+[camera_node-1] [INFO] [1790776037.633317826] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=30.03 total=3285
+[camera_node-1] [INFO] [1790776042.755913049] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=10.65 total=3385
+[camera_node-1] [INFO] [1790776047.813514386] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=9.55 total=3425
+[camera_node-1] [INFO] [1790776054.051217781] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=4.59 total=3470
+[camera_node-1] [INFO] [1790776059.735118831] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=10.02 total=3520
+[camera_node-1] [INFO] [1790776064.828518945] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=7.64 total=3562
+[camera_node-1] [INFO] [1790776069.835992290] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=4.38 total=3589
+[camera_node-1] [INFO] [1790776074.862794011] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=6.62 total=3611
+[camera_node-1] [INFO] [1790776080.852373206] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=8.18 total=3667
+[camera_node-1] [INFO] [1790776085.911346447] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=8.60 total=3709
+[camera_node-1] [INFO] [1790776091.767700384] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=9.58 total=3759
+[camera_node-1] [INFO] [1790776097.813693326] [hik_camera]: connected=1 requested_fps=30.00 publish_fps=10.11 total=3802
+[camera_node-1] [INFO] [1790776101.399522835] [hik_camera]: Accepted configuration; readbacks will appear in diagnostics
+[camera_node-1] [INFO] [1790776103.749823614] [hik_camera]: connected=1 requested_fps=60.00 publish_fps=10.95 total=3856
+[camera_node-1] [INFO] [1790776108.755383527] [hik_camera]: connected=1 requested_fps=60.00 publish_fps=6.38 total=3901
+[camera_node-1] [INFO] [1790776114.976900067] [hik_camera]: connected=1 requested_fps=60.00 publish_fps=7.27 total=3949
+[camera_node-1] [INFO] [1790776120.797040660] [hik_camera]: connected=1 requested_fps=60.00 publish_fps=6.39 total=3979
+[camera_node-1] [INFO] [1790776126.255328962] [hik_camera]: connected=1 requested_fps=60.00 publish_fps=2.99 total=4002
+[camera_node-1] [INFO] [1790776131.851230334] [hik_camera]: connected=1 requested_fps=60.00 publish_fps=6.99 total=4030
+[camera_node-1] [INFO] [1790776137.058307003] [hik_camera]: connected=1 requested_fps=60.00 publish_fps=3.04 total=4054
+[camera_node-1] [INFO] [1790776143.258452009] [hik_camera]: connected=1 requested_fps=60.00 publish_fps=3.34 total=4102
+[camera_node-1] [INFO] [1790776148.780185769] [hik_camera]: connected=1 requested_fps=60.00 publish_fps=7.97 total=4148
+[camera_node-1] [INFO] [1790776153.820292218] [hik_camera]: connected=1 requested_fps=60.00 publish_fps=7.24 total=4188
+[camera_node-1] [INFO] [1790776159.477161657] [hik_camera]: connected=1 requested_fps=60.00 publish_fps=1.33 total=4221
+[camera_node-1] [INFO] [1790776164.738691398] [hik_camera]: connected=1 requested_fps=60.00 publish_fps=8.87 total=4259
+[camera_node-1] [INFO] [1790776169.874369721] [hik_camera]: connected=1 requested_fps=60.00 publish_fps=6.41 total=4297
+[camera_node-1] [INFO] [1790776175.699483672] [hik_camera]: connected=1 requested_fps=60.00 publish_fps=11.52 total=4340
+[camera_node-1] [INFO] [1790776180.755342640] [hik_camera]: connected=1 requested_fps=60.00 publish_fps=11.10 total=4378
+[camera_node-1] [INFO] [1790776189.367290705] [hik_camera]: connected=1 requested_fps=60.00 publish_fps=2.76 total=4431
+[camera_node-1] [INFO] [1790776195.177684122] [hik_camera]: connected=1 requested_fps=60.00 publish_fps=1.69 total=4437
+[camera_node-1] [INFO] [1790776209.632684212] [hik_camera]: connected=1 requested_fps=60.00 publish_fps=0.55 total=4460
+[rviz2-2] sequence size exceeds remaining buffer
+[camera_node-1] [INFO] [1790776246.761103795] [hik_camera]: connected=1 requested_fps=60.00 publish_fps=0.05 total=4462
